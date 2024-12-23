@@ -1,0 +1,8 @@
+services:
+  streamlit_service:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8501:8501"
+    command: streamlit run app.py
